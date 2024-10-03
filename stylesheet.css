@@ -1,0 +1,45 @@
+@font-face {
+    font-family: Outfit;
+    src: url(fonts/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+    background-color: #E5F3FD;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: white;
+    height: 400px
+}
+
+.qr-code {
+    border-radius: 10px;
+    width: auto;
+    height: 200px;
+}
+
+.qr-header {
+    font-family: Outfit;
+    font-size: 20px;
+    font-weight: 700;
+    text-wrap: wrap;
+}
+
+.qr-body {
+    font-family: Outfit;
+    font-size: 15px;
+    font-weight: 400;
+    text-wrap: wrap;
+}
+
+.attribution { 
+    font-family: Outfit;
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
