@@ -1,22 +1,37 @@
 @font-face {
     font-family: Outfit;
+    font-display: swap;
     src: url(fonts/Outfit-VariableFont_wght.ttf);
 }
 
 body {
-    background-color: hsl(212, 45%, 89%)
+    background-color: hsl(212, 45%, 89%);
 }
 
-.center-flex {
+h1, main, footer {
+    padding: 0;
+}
+
+.text {
+    font-family: Outfit;
+    word-wrap: break-word;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+}
+
+#flex-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    padding: 0;
+    margin: 0;
+    height: 94vh;
 }
 
-.grid-container {
+#grid-container {
     width: 17.5rem;
-    height: 29rem;
+    height: 28rem;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
@@ -26,54 +41,49 @@ body {
     align-items: center;
 }
 
-.flex-container-qr {
+#flex-qr-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin: auto;
 }
 
-.qr-code {
-    border-radius: 10px;
+#qr-code {
+    border-radius: 30px;
+    padding: 1rem;
     width: auto;
     height: 15.5rem;
 }
 
-.flex-container-text {
+#flex-text-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.qr-header {
-    font-family: Outfit;
+#qr-header-text {
     color: hsl(218, 44%, 22%);
     font-size: 20px;
     font-weight: 700;
-    text-wrap: wrap;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-.qr-body {
-    font-family: Outfit;
+#qr-body-text {
     color: hsl(216, 15%, 48%);
     font-size: 15px;
     font-weight: 400;
-    text-wrap: wrap;
-    margin-left: 1rem;
-    margin-right: 1rem;
     margin-bottom: 1rem;
-    text-align: center;
 }
 
-.attribution { 
-    font-family: Outfit;
-    font-size: 11px; 
-    text-align: center; 
+.footer {
+    margin-top: auto;
+}
+
+#attribution { 
+    font-size: 11px;
+    margin-top: auto;
 }
 
 .attribution a { 
